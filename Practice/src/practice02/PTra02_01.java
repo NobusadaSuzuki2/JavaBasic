@@ -16,7 +16,7 @@ public class PTra02_01 {
 		System.out.println(126*13);
 
 		// ★ 97を6で割ったときの余りを出力してください
-		System.out.println(97/6);
+		System.out.println(97%6);
 
 	}
 }
