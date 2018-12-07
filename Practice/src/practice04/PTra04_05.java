@@ -81,7 +81,9 @@ public class PTra04_05 {
 					System.out.println("あいこです。");
 
 					}
-
+				/*breakではなくて(winFlg=true)にすると、
+				 * 上の「while (!winFlg ” winFlg == falseと同じ意味”）」
+				 * が意味がある。 */
 
 
 			}
