@@ -46,16 +46,41 @@ public class PTra04_05 {
 			 */
 			if (cpuHand == 0) {
 				System.out.println("グー！");
-
+				if (myHand==0) {
+					System.out.println("あいこ");
+				}else if (myHand==1) {
+					System.out.println("あなたの負けです");
+					break;
+				}else {
+					System.out.println("あなたの勝ちです。");
+					break;
+				}
 
 
 			} else if (cpuHand == 1) {
 				System.out.println("チョキ！！");
+				if (myHand==0) {
+					System.out.println("あなたの勝ちです。");
+					break;
+				}else if (myHand==1) {
+					System.out.println("あいこ");
 
-
-
+				}else {
+					System.out.println("あなたの負けです。");
+					break;
+					}
 			} else {
 				System.out.println("パー！！");
+				if (myHand==0) {
+					System.out.println("あなたの負けです。");
+					break;
+				}else if (myHand==1) {
+					System.out.println("あなたの勝ちです。");
+					break;
+				}else {
+					System.out.println("あいこです。");
+
+					}
 
 
 
