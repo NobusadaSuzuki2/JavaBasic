@@ -15,14 +15,9 @@ public class PTra06_04 {
 		 * -----------------------------------
 		 * ■■■■■
 		 */
-		for (int i=1;i<=30;i++) {
-			if(i<25) {
-				System.out.print("-");
-			}else if(i==25) {
-				System.out.println("");
-			}else {
+		for (int i=0;i<5;i++) {
+			
 				System.out.print("■");
-			}
 		}
 	}
 }

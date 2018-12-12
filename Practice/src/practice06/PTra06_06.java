@@ -19,40 +19,17 @@ public class PTra06_06 {
 		 * ■■■□□
 		 * ■■■■□
 		 */
-		for (int i=0;i<56;i++) {
-			if(i<24) {
-				System.out.print("-");
-			}else if(i==24) {
-				System.out.println("");
-			}else if(i>24&&i<30) {
-				System.out.print("□");
-			}else if(i==30) {
-				System.out.println("");
-			}else if(i==31) {
-				System.out.print("■");
-			}else if(i>31&&i<36) {
-				System.out.print("□");
-			}else if(i==36) {
-				System.out.println("");
-			}else if(i>36&&i<39) {
-				System.out.print("■");
-			}else if(i>39&&i<43) {
-				System.out.print("□");
-			}else if(i==43) {
-				System.out.println("");
-			}else if(i>43&&i<47) {
-				System.out.print("■");
-			}else if(i>47&&i<50) {
-				System.out.print("□");
-			}else if(i==50) {
-				System.out.println("");
-			}else if(i>50&&i<55) {
-				System.out.print("■");
-			}else if(i==55) {
-				System.out.print("□");
-			}else {
-				
-			}
-		}
+
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("■︎️");
+            }
+
+            for (int j = 5; j > i; j--) {
+                System.out.print("□");
+            }
+            System.out.println();
+        }
 	}
 }

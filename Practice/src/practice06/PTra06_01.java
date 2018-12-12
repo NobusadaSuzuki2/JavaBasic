@@ -17,5 +17,6 @@ public class PTra06_01 {
 			System.out.println(i);
 
 		}
+		
 	}
 }
