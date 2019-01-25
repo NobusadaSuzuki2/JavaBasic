@@ -6,7 +6,7 @@
  */
 package practice13.ptra13;
 
-import practice13.common.Character;
+import practice13.common.Hero;
 
 public class PTra13_02 {
 	/*
@@ -25,10 +25,4 @@ public class PTra13_02 {
 		System.out.println(hero.showParameter());
 	}
 }
-class Hero extends Character{
 
-	public Hero(int hp, int power, int endurance) {
-		super(hp, power, endurance);
-	}
-	
-}

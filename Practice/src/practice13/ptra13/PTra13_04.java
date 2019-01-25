@@ -5,7 +5,8 @@
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 package practice13.ptra13;
-
+import practice13.common.Hero;
+import practice13.common.Slime;
 public class PTra13_04 {
 	/*
 	 * ★ PTra13_02, PTra13_03で作成した、Hero/Slimeクラスを使用します

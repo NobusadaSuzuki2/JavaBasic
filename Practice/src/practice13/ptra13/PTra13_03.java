@@ -7,7 +7,7 @@
 package practice13.ptra13;
 
 
-import practice13.common.Character;
+import practice13.common.Slime;
 
 
 public class PTra13_03 {
@@ -30,10 +30,4 @@ public class PTra13_03 {
 	}
 	 
 }
-class Slime extends Character{
 
-	public Slime(int hp, int power, int endurance) {
-		super(hp, power, endurance);
-	}
-	
-}
