@@ -13,12 +13,16 @@ import practice15.common.JavaCourse;
 public class PTra15_01 {
 
 	public static void main(String[] args) {
-
-		JavaCourse jCourse = new JavaCourse();
-		DBCourse dbCourse = new DBCourse();
+		
+		//JavaCourse jCourse = new JavaCourse();
+		//DBCourse dbCourse = new DBCourse();
 
 		// ★ Course[	]の配列に jcourse と dbCourse のインスタンスを代入してください。
-
+		Course[] courseList = {
+				new JavaCourse(),
+				new DBCourse()
+		};
+		
 		for (Course course : courseList) {
 			System.out.println(course.getCourseName());
 		}
