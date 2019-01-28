@@ -46,7 +46,6 @@ public class PTra13_09 {
 			employee[i].setDepartmentNm(QUATERDATA[i][i]);
 			
 		}
-		System.out.println(employee[0].getUserNm());
 		
 		
 	}
