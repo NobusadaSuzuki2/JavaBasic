@@ -16,40 +16,48 @@ public class JavaCourse implements Course{
 	 * 		継承
 	 * 		高度な継承
 	 */
-	
+
 	public String getCourseName() {
-		return "【Eラーニング】Java";
+		return PREFIX + "Java";
 	}
 	public String[] getCourseUnit() {
-		final String[] TANGEN = {"式と演算","制御構文","メソッド","配列","オブジェクト指向","継承","高度な継承"};
-		return TANGEN;
+		return new String[]{
+				"式と演算"
+				,"制御構文"
+				,"メソッド"
+				,"配列"
+				,"オブジェクト指向"
+				,"継承"
+				,"高度な継承"
+		};
+
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
 }
-	
+
 	/*
 	private String courseName;
 	private String[] courseUnit;
-	
-	
+
+
 	public String getCourseName() {
-		
+
 		return this.courseName;
 	}
 	public String[] getCourseUnit() {
 		return this.courseUnit;
 	}
-	 
+
 	public void setCourseName(String courseName) {
 		this.courseName = courseName;
 	}
@@ -57,5 +65,5 @@ public class JavaCourse implements Course{
 		this.courseUnit = tangen;
 	}
 	*/
-	
+
 

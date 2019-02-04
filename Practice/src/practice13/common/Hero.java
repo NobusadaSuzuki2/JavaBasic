@@ -2,7 +2,7 @@ package practice13.common;
 
 public class Hero extends Character {
 	
-	public Hero(int hp, int power, int endurance) {
+	public Hero() {
 		super(25, 10, 7);
 	}
 }

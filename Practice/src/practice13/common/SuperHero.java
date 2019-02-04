@@ -2,10 +2,13 @@ package practice13.common;
 
 public class SuperHero extends Hero{
 
-Item equipment;
-	public SuperHero(int hp, int power, int endurance) {
-		super(25,10,7);
-
+	Item equipment;
+	
+	public Item getEquipment() {
+		return equipment;
+	}
+	public void setEquipment(Item equipment) {
+		this.equipment=equipment;
 	}
 	/*
 	 * ★ common.Heroクラスを継承した、common.SuperHeroクラスを作成してください
@@ -20,16 +23,11 @@ Item equipment;
 	 * 		equipmentのアクセサ
 	 */
 	public int attack() {
-		int attackDamage = super.attack() + equipment.additionalDamage;
-		return attackDamage;
+		return super.attack() + equipment.additionalDamage;
+		
 	}
 
-	public Item getEquipment() {
-		return equipment;
-	}
-	public void setEquipment(Item equipment) {
-		this.equipment=equipment;
-	}
+	
 
 }
 

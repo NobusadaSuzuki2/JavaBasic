@@ -16,9 +16,6 @@ public class PTra11_02 {
 
 		// ★ ReadFileClassのクラスメソッドreadBookDataFile()を使い、本情報を取得します
 		Book[] books = FileReaderClass.readBookDataFile();
-
-
-
 		System.out.println("探したい本のタイトル（又はその一部）を入力してください");
 
 		// ★ ユーザが入力した文字列が、本情報のタイトル一部に含まれていた場合は、その本情報を出力してください
@@ -30,5 +27,14 @@ public class PTra11_02 {
 	    		System.out.println(books[i].dispBookInfo());
 	    	}
 		}
+	    /*Scanner scanner = new Scanner(System.in);
+		String line = scanner.nextLine();
+
+		for (Book book : bookList) {
+			if (book.tilte.indexOf(line) >= 0) {
+				System.out.println(book.dispBookInfo());
+				System.out.println("-----------------------------");
+			}
+		}*/
 	}
 }

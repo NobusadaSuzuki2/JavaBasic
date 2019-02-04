@@ -22,8 +22,12 @@ public class DBCourse implements Course{
 
 	
 	public String[] getCourseUnit() {
-		final String[] TANGEN = {"DB基礎","SQL基礎","正規化","SQL応用",};
-		return TANGEN;
+		return new String[]{
+				"DB基礎"
+				,"SQL基礎"
+				,"正規化"
+				,"SQL応用"
+		};
 	}
 	
 	
