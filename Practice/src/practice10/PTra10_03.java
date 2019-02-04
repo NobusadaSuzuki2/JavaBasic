@@ -6,6 +6,8 @@ package practice10;
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 
+import java.util.Scanner;
+
 public class PTra10_03 {
 
 	/*
@@ -25,8 +27,8 @@ public class PTra10_03 {
 
 		// ★ java.util.Scannerクラスをインスタンス化し、変数scannerに代入してください
 		// ★ 入力された値を、String型の変数lineに格納してください
-		String line =  new java.util.Scanner(System.in).nextLine();
-
+		String line =  new Scanner(System.in).nextLine();
+		//Scanner scanner = new Scanner(System.in);
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
 		String[] list= line.split(",");

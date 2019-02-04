@@ -19,7 +19,8 @@ public class PTra10_04 {
 		users = new User[3];
 
 		// ★ java.util.Scannerクラスをインスタンス化し、変数scannerに代入してください
-
+		//Scanner scanner = new Scanner(System.in);
+		
 		// ★ usersのサイズ分繰り返す制御構文を記述してください
 		//----------- ループ start
 		for(int i = 1; i <= users.length;i++) {
@@ -29,25 +30,26 @@ public class PTra10_04 {
 
 			// ★ コマンドプロンプトに入力された値を、String型の変数lineに格納してください
 			String line =  new java.util.Scanner(System.in).nextLine();
-
+			//String line = scanner.nextLine();
+			
 			// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
 			String[] list = line.split(",");
-
+			//String[] inputArray = line.split(",");
+			
 			// ★ 配列にした値を、users[カウント]の各フィールドに代入してください
 			// ★ ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
-
 			User us =new User();
 			us.userId = Integer.parseInt(list[0]);
 			us.userNm = list[1];
 			us.mail = list[2];
 			us.password = list[3];
 			users[i] = us;
-
-//			users[i]=new User();
-//			users[i].userId = Integer.parseInt(list[0]);
-//			users[i].userNm = list[1];
-//			users[i].mail = list[2];
-//			users[i].password = list[3];
+			/*users[i] = new User();
+			users[i].userId = Integer.parseInt(inputArray[0]);
+			users[i].userNm = inputArray[1];
+			users[i].mail = inputArray[2];
+			users[i].password = inputArray[3];
+	*/
 		}
 		//----------- ループ end
 

@@ -9,6 +9,7 @@ package practice18;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class PTra18_04 {
@@ -39,19 +40,61 @@ public class PTra18_04 {
         		player.setTeam(list[3]);
 
         		playerList.add(player);
-
-
+        		
 
             }
         } catch (FileNotFoundException e) {
             System.out.println("ファイルが見つかりません");
         }
 
-
+      
 
 		// ★ ①のArrayListの中からGK1名、DF4名、MF4名, FW2名をランダムで出力してください
         
-        System.out.println(playerList.get(0).getTeam().equals("レアル・マドリード"));
-        
+        	Collections.shuffle(playerList);
+        	int df = 0;
+        	int mf = 0;
+        	int fw = 0;
+        	
+        	for(int i= playerList.size()-1;i >= 0 ;i--) {
+        		if(playerList.get(i).getPosition().equals("GK")) {
+        			System.out.println( playerList.get(i).getPosition());
+        			System.out.println( playerList.get(i).getName());
+ 	    		   break;
+ 	    	   }
+        	}
+        	for(int i= playerList.size()-1;i >= 0 ;i--) {
+        		if(playerList.get(i).getPosition().equals("DF")) {
+        			System.out.println( playerList.get(i).getPosition());
+        			System.out.println( playerList.get(i).getName());
+       				df++;
+        	
+       				if(df==4) {
+        			break;
+       				}
+        		}
+        	}
+        	for(int i= playerList.size()-1;i >= 0 ;i--) {
+        		if(playerList.get(i).getPosition().equals("MF")) {
+        			System.out.println( playerList.get(i).getPosition());
+        			System.out.println( playerList.get(i).getName());
+       				mf++;
+        	
+       				if(mf==4) {
+        			break;
+       				}
+        		}
+        	}
+        	for(int i= playerList.size()-1;i >= 0 ;i--) {
+        		if(playerList.get(i).getPosition().equals("FW")) {
+        			System.out.println( playerList.get(i).getPosition());
+        			System.out.println( playerList.get(i).getName());
+       				fw++;
+        	
+       				if(fw==2) {
+        			break;
+       				}
+        		}
+        	}
 	}
 }

@@ -12,17 +12,14 @@ public class PTra08_03 {
 	public static void main(String[] args) {
 
 		// ★ 0～100のランダムな値を取得して、変数numberに代入してください
-		int[] namber;
-		namber = new int[100];
-		for (int i = 0; i < namber.length; i++) {
-			namber[i] = i + 1;
-		}
-		Random r = new Random();
-		int index = r.nextInt(100);
 		
-
+		Random r = new Random();
+		int number = r.nextInt(100);
+		//int number = new java.util.Random().nextInt(101);
+		
+		System.out.println("選択された値：" + number);
 		// ★ 変数resultを宣言し、メソッドisEvenNumberを（変数number）で呼び出した結果を代入してください
-		boolean result= isEvenNumber(index);
+		boolean result= isEvenNumber(number);
 
 		if (result) {
 			System.out.println("偶数です");

@@ -20,8 +20,10 @@ public class PTra07_04 {
 			trump[i] = i + 1;
 		}
 		// ★ 0～51の中からランダムで値を取得して、変数indexに代入してください
-		Random r = new Random();
-		int index = r.nextInt(52);
+		
+		int index = new Random().nextInt(52);
+		//int index = new java.util.Random().nextInt(52);
+		
 		// ★ 配列trumpのindex番目の中に入っている数字を出力してください
 		System.out.println(trump[index]);
 
