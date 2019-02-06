@@ -16,7 +16,7 @@ public class PTra17_01 {
 		 * 	※例外発生時には、「例外が発生しました」を出力してください
 		 */
 		try {
-		ThrowExceptionUtil.nullToBlank(null);
+			ThrowExceptionUtil.nullToBlank(null);
 		}catch(NullPointerException e) {
 			System.out.println("例外が発生しました");
 		}

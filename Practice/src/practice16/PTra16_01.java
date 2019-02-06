@@ -14,4 +14,7 @@ public class PTra16_01 {
     	String dateStr = f.format(date);
     	System.out.println(dateStr);
     }
+    // Date date = new Date();
+    //SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
+    //System.out.println(sdf.format(date));
 }

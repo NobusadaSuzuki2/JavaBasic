@@ -28,10 +28,7 @@ public class PTra18_03 {
 	        try(Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"))) {
 	            while (scanner.hasNext()) {
 	                String line = scanner.nextLine();
-
-
 	               String[] list = line.split(",");
-
 	               Player player = new Player();
 	        		player.setPosition(list[0]);
 	        		player.setName(list[1]);
@@ -39,9 +36,6 @@ public class PTra18_03 {
 	        		player.setTeam(list[3]);
 
 	        		playerList.add(player);
-
-
-
 	            }
 	        } catch (FileNotFoundException e) {
 	            System.out.println("ファイルが見つかりません");
@@ -54,22 +48,18 @@ public class PTra18_03 {
 	    	   if(playerList.get(i).getTeam().equals("バルセロナ")) {
 	    		   playerList.remove(i);
 	    	   }
-
 	       }
-
-
+	       
+	       /*for (int i = playerList.size() - 1; 0 < i; i--) {
+			Player player = playerList.get(i);
+			String team = player.getTeam();
+			if ("レアル・マドリード".equals(team) || "バルセロナ".equals(team)) {
+				playerList.remove(i);
+			}
+		}*/
+	       
 		// ★ ①のArrayListの中から"レアル・マドリード", "バルセロナ"の選手を除外してください
-        //playerList.remove(playerList.indexOf("レアル・マドリード"));
-        //playerList.remove(playerList.indexOf("バルセロナ"));
-	        /*List<Player> set = new ArrayList<>();
-	        Collections.addAll(set, "レアル・マドリード", "バルセロナ");
-
-	        List<Player> playerList2 = new ArrayList<>(player);
-
-	       playerList2.removeAll(set);
-	       */
-
-
+       
 		// ★ 削除後のArrayListの中身を全件出力してください
         for(Player list: playerList) {
         	System.out.println(list);

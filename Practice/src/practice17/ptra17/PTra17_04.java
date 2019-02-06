@@ -18,12 +18,22 @@ public class PTra17_04 {
 		
 		for(int i=0;i<str.length();i++) {
 			try {
-				System.out.println(str.charAt(i));
-		        Thread.sleep(1000);
+				System.out.print(str.charAt(i));
+		        Thread.sleep(500);
 			} catch(InterruptedException e){
 				e.printStackTrace();
 			}
 		}
+		
+		/*char[] charArray = str.toCharArray();
+		for (char ch : charArray) {
+			System.out.print(ch);
+			try {
+				Thread.sleep(250);
+			} catch (InterruptedException e) {
+				// 例外発生してももみ消す
+			}
+		}*/
 		
 	}
 }

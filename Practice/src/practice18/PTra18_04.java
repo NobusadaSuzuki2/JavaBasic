@@ -29,10 +29,7 @@ public class PTra18_04 {
         try(Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"))) {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
-
-
                String[] list = line.split(",");
-
                Player player = new Player();
         		player.setPosition(list[0]);
         		player.setName(list[1]);
@@ -40,8 +37,6 @@ public class PTra18_04 {
         		player.setTeam(list[3]);
 
         		playerList.add(player);
-        		
-
             }
         } catch (FileNotFoundException e) {
             System.out.println("ファイルが見つかりません");
@@ -58,14 +53,14 @@ public class PTra18_04 {
         	
         	for(int i= playerList.size()-1;i >= 0 ;i--) {
         		if(playerList.get(i).getPosition().equals("GK")) {
-        			System.out.println( playerList.get(i).getPosition());
+        			System.out.print( playerList.get(i).getPosition());
         			System.out.println( playerList.get(i).getName());
  	    		   break;
  	    	   }
         	}
         	for(int i= playerList.size()-1;i >= 0 ;i--) {
         		if(playerList.get(i).getPosition().equals("DF")) {
-        			System.out.println( playerList.get(i).getPosition());
+        			System.out.print( playerList.get(i).getPosition());
         			System.out.println( playerList.get(i).getName());
        				df++;
         	
@@ -76,7 +71,7 @@ public class PTra18_04 {
         	}
         	for(int i= playerList.size()-1;i >= 0 ;i--) {
         		if(playerList.get(i).getPosition().equals("MF")) {
-        			System.out.println( playerList.get(i).getPosition());
+        			System.out.print( playerList.get(i).getPosition());
         			System.out.println( playerList.get(i).getName());
        				mf++;
         	
@@ -87,7 +82,7 @@ public class PTra18_04 {
         	}
         	for(int i= playerList.size()-1;i >= 0 ;i--) {
         		if(playerList.get(i).getPosition().equals("FW")) {
-        			System.out.println( playerList.get(i).getPosition());
+        			System.out.print( playerList.get(i).getPosition());
         			System.out.println( playerList.get(i).getName());
        				fw++;
         	
